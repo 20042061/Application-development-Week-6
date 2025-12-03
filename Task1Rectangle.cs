@@ -18,11 +18,16 @@ namespace Week6Workshop
     {
         public static void Run()
         {
-            Console.WriteLine("\n--- TASK 1: Rectangle ---");
+            Console.WriteLine("\n--- TASK 1: Rectangle ---\n");
 
-            var r = new Rectangle(10, 5);
-            Console.WriteLine($"Area: {r.Area}");
-            Console.WriteLine($"Perimeter: {r.Perimeter()}");
+            var rectangle = new Rectangle(10, 5);
+
+            Console.WriteLine("Rectangle Details:");
+            Console.WriteLine($"Length   : {rectangle.Length}");
+            Console.WriteLine($"Width    : {rectangle.Width}");
+            Console.WriteLine($"Area     : {rectangle.Area}");
+            Console.WriteLine($"Perimeter: {rectangle.Perimeter()}");
+            Console.WriteLine(new string('-', 30));
         }
     }
 }
